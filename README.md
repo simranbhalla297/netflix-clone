@@ -8,9 +8,18 @@
 3.TMDB Api.
 4.Media queries.
 ```
+ ## Project-walk-through
+ ## Landing page
+<img src="https://github.com/simranbhalla297/netflix-clone/blob/master/public/images/landingPage.png"/>
 
+ ## Home page
+<img src="https://github.com/simranbhalla297/netflix-clone/blob/master/public/images/HomePage.png"/>
+
+ ## Responsive page
+<img src="https://github.com/simranbhalla297/netflix-clone/blob/master/public/images/responsive.png"/>
 
 ### `Running Locally`
+
 ```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -23,3 +32,4 @@ npm install
 # Start the app on a new window
 npm start
 ```
+https://github.com/simranbhalla297/netflix-clone/blob/master/public/images/part1.png
