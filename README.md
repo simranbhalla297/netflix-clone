@@ -1,8 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+This project is a simply front end clone of Netflix. It was created with React. It uses The MovieDB Api to search for movies and display details.
+## Netflix-clone
 
 In the project directory, you can run:
 
