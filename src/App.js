@@ -99,11 +99,13 @@ function App() {
                     </Grid>
                     <Grid item container md={6} justifyContent="flex-end">
                       <Box sx={sectionContent}>
-                        <Typography sx={title}>Enjoy on your TV</Typography>{" "}
+                        <Typography sx={title}>
+                          Download your shows to watch offline.
+                        </Typography>{" "}
                         <Typography sx={paragraph}>
                           {" "}
-                          Watch on smart TVs, PlayStation, Xbox, Chromecast,
-                          Apple TV, Blu-ray players and more.
+                          Save your favourites easily and always have something
+                          to watch.
                         </Typography>
                       </Box>
                     </Grid>
@@ -113,11 +115,11 @@ function App() {
                   <Grid container direction="row" sx={sectionContainer}>
                     <Grid item md={6}>
                       <Box sx={sectionContent}>
-                        <Typography sx={title}>Enjoy on your TV</Typography>{" "}
+                        <Typography sx={title}>Watch Everywhere</Typography>{" "}
                         <Typography sx={paragraph}>
                           {" "}
-                          Watch on smart TVs, PlayStation, Xbox, Chromecast,
-                          Apple TV, Blu-ray players and more.
+                          Stream unlimited movies and TV shows on your phone,
+                          tablet, laptop, and TV.
                         </Typography>
                       </Box>
                     </Grid>
