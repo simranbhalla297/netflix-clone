@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: black;
+  color: white;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  padding-left: 2rem;
   display: flex;
-  flex-direction: column;
+  padding-right: 2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.banner__fadeBottom {
+  height: 7.5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+.listItemContainer {
+  width: 225px;
+  height: 120px;
+  margin-right: 5px;
+  overflow: hidden;
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.listItemContainerLarge {
+  width: 225px;
+  max-height: 250px;
+  margin-right: 5px;
+  overflow: hidden;
+
+  color: white;
+}
+.listItemContainerLarge:hover {
+  max-height: 260px;
+  margin-right: 5px;
+  overflow: hidden;
+  color: white;
+}
+.listItemContainerLarge img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.listItemContainerLarge:hover img {
+  transform: scale(1.09);
+}
+.listItemContainer img {
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.listItemContainer video {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.listItemContainer:hover {
+  width: 325px;
+  height: 300px;
+  position: absolute;
+  top: -150px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+}
+.listItemContainer:hover img {
+  height: 140px;
+}
+.listItemContainer:hover .itemInfo {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+.listItemContainer:hover .itemInfo .icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.listItemContainer:hover .itemInfo .itemInfoTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+.listItemContainer:hover .itemInfo .icons .icon {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.listItemContainer:hover .itemInfo .itemInfoTop .limit {
+  border: 1px solid gray;
+  padding: 1px 3px;
+  margin: 0 10px;
+}
+.listItemContainer:hover .itemInfo .desc {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.listItemContainer:hover .itemInfo .genre {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.icons {
+  color: "white";
+}
+.startBtn {
+  border: 0px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  fill: currentcolor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  vertical-align: text-top;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 600px) {
+  .banner__button {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+  }
+  .listItemContainerLarge {
+    width: 200px;
+    max-height: 200px;
+    margin-right: 5px;
+    overflow: hidden;
+
+    color: white;
+  }
+  .listItemContainer:hover {
+    display: none;
+  }
+  .listItemContainerLarge img {
+    width: 100%;
+    height: 100%;
   }
 }
